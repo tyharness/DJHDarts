@@ -1,0 +1,59 @@
+DJH Darts v1.0- Ty Harness Sept 2017
+
+
+I built and tested it on the Raspberry Pi model 1B using the GNU C compiler.  
+The code wont work on Windows without a little extra work on the source code.
+
+Ensure you have the GNU C compiler installed. This is the default on the 
+Raspbian distro of course.
+
+Download the zip archive and unzip to a directory of your choice.
+
+Open a terminal (or from the CLI), navigate to the
+directory and type:
+
+ make
+
+ and then to run the software by typing [by default the scoreing starts at 501]:
+
+ ./DJHDarts [player 1 start score] [player 2 start score]
+
+command line arguments examples:
+ ./DJHDarts
+ ./DJHDarts 101
+ ./DJHDarts 501 301
+ ./DJHDarts 301 301
+
+
+
+Instructions:
+
+
+Match Play mode :
+Use this application as a method of scoring a 2 
+player 501 dart match.  Press s to  suggest 
+potential out shot finishes.
+
+Game Play mode:
+Starting from 501:
+(The dart players score is randomly generated.)
+Add the 3 the darts and take from score until
+a check out is avaiable and then enter 3 darts
+to finish on zero.  You must finish on a double.
+e.g. a 3 dart finish:  170-> 60 60 50 [return]
+e.g. a 2 dart finish:  58 -> 0 8 50   [return]
+e.g. a one dart finish:40 -> 0 0 40   [return]
+
+You can use setup darts but don't leave yourself on
+a bogey finish.  If you bust or leave youself on 1 then
+it's a no score.
+
+
+Alas, There are no prizes or glory just a bit of fun.
+I was watching the darts and the overlay screen graphics
+had auto checkout suggest so I thought that would make
+a nice little application.
+
+
+
+
